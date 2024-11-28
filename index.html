@@ -40,8 +40,9 @@
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Certifications</span></a></li>
+        <li><a href="#docs" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Documents</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -54,17 +55,16 @@
       <h1>Michael Mensah</h1>
       <p>I'm <span class="typed" data-typed-items="a Business man and an Electrical Engineer"></span></p>
       <div class="social-links">
-        <a href="https://twitter.com/codingdrizzle" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-        <a href="https://wa.link/jl4j4t" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://github.com/codingdrizzle" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/codingdrizzle" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/michael-buabin-pmp%C2%AE-59035157/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/mickymensa" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://wa.link/jl4j4t" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
   
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -162,46 +162,54 @@
       </div>
     </section><!-- End Facts Section -->
 
-    <!-- ======= Resume Section ======= -->
+    <!-- ======= Certifications Section ======= -->
+    <section id="certifications" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Certifications</h2>
+        </div>
+        <div class="certs">
+            <div class="card" onclick="downloadPDF('docs/certificates/PMI Member Certificate.pdf')">
+                <div class="card-image-overlay">
+                    <div class="card-title">PMI Member Certificate</div>
+                </div>
+                <img src="./assets/img/pmp-member.jpeg" alt="PDF Cover" class="card-image">
+            </div>
+            <div class="card" onclick="downloadPDF('docs/certificates/PMI - PMP Certfication.pdf')">
+                <div class="card-image-overlay">
+                    <div class="card-title">PMI - PMP Certfication</div>
+                </div>
+                <img src="./assets/img/pmi-pmp.webp" alt="PDF Cover" class="card-image">
+            </div>
+            <div class="card" onclick="downloadPDF('docs/certificates/PMI - CAPM Certfication.pdf')">
+                <div class="card-image-overlay">
+                    <div class="card-title">PMI - CAPM Certfication</div>
+                </div>
+                <img src="./assets/img/pmi-capm.png" alt="PDF Cover" class="card-image">
+            </div>
+        </div>
+    </div>
+  </section><!-- End Certifications Section -->
+
+    <!-- ======= Documents Section ======= -->
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Documents</h2>
         </div>
-        <div style="display: flex; gap: 10px;">
-            <a id="doc" class="btn btn-lg smooth-scroll brand i" href="./docs/PMI Member Certificate (1).pdf"
-            download="Description-of-file.extension"
-            data-aos="zoom-in"
-            data-aos-anchor="data-aos-anchor"
-            style="font-size: 20px"
-            >
-            <i class="fa fa-file mr-2" style="font-size: 30px"></i>
-            PMI</a>
-          <a id="doc" class="btn btn-lg smooth-scroll brand i" href="./docs/PMI Member Certificate (1).pdf"
-          download="Description-of-file.extension"
-          data-aos="zoom-in"
-          data-aos-anchor="data-aos-anchor"
-          style="font-size: 20px"
-          >
-          <i class="fa fa-file mr-2" style="font-size: 30px"></i>
-          Curriculum Vitae
-        </a>
-          <a id="doc" class="btn btn-lg smooth-scroll brand i" href="./docs/PMI Member Certificate (1).pdf"
-          download="Description-of-file.extension"
-          data-aos="zoom-in"
-          data-aos-anchor="data-aos-anchor"
-          style="font-size: 20px"
-          >
-          <i class="fa fa-file mr-2" style="font-size: 30px"></i>
-          Career
-        </a>
+        <div class="certs">
+            <div class="card" onclick="downloadPDF('docs/cv/Ing-Michael-Mensah_CV.pdf')">
+                <div class="card-image-overlay">
+                    <div class="card-title">Curriculum Vitae</div>
+                </div>
+                <img src="./assets/img/cv.jpeg" alt="PDF Cover" class="card-image">
+            </div>
     </div>
-    </div>
-  </section><!-- End Resume Section -->
+  </section><!-- End Documents Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!--<section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -249,7 +257,8 @@
           </div>    
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>-->
+    <!-- End Portfolio Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -260,7 +269,7 @@
 
         <div class="row mt-1">
 
-          <div class="col-lg-4" style="width: 100%;">
+          <div class="col-lg-4 mt-5 mt-lg-0">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -286,10 +295,9 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
             <iframe
-                src=""
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.537985230153!2d-0.202719148304537!3d5.724085707225476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d8c70f979c3%3A0xb31806ef1109c361!2sPQFW%2BMWQ%2C%20Abokobi%20Road%2C%20Accra!5e0!3m2!1sen!2sgh!4v1732832827172!5m2!1sen!2sgh"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
         </div>
       </div>
     </section><!-- End Contact Section -->
@@ -301,10 +309,10 @@
     <div class="container">
       <h3>Michael Mensah</h3>
       <div class="social-links">
-        <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-        <a href="https://wa.link/" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://github.com/" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/michael-buabin-pmp%C2%AE-59035157/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/mickymensa" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://wa.link/jl4j4t" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>michael.mensah</span></strong>. All Rights Reserved.
